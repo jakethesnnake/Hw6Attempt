@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ksu.Cis300.NetworkFlow", "Ksu.Cis300.NetworkFlow\Ksu.Cis300.NetworkFlow.csproj", "{48913B37-63CC-42C0-9D65-54ABEB0A34D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ksu.Cis300.Graphs", "Ksu.Cis300.Graphs\Ksu.Cis300.Graphs.csproj", "{0F668054-455C-48C5-A6C3-FF62DDADFA38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ksu.Cis300.LinkedListLibrary", "Ksu.Cis300.LinkedListLibrary\Ksu.Cis300.LinkedListLibrary.csproj", "{76008E61-7BAD-4395-B65F-1A59F0CFBF06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{48913B37-63CC-42C0-9D65-54ABEB0A34D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48913B37-63CC-42C0-9D65-54ABEB0A34D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48913B37-63CC-42C0-9D65-54ABEB0A34D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F668054-455C-48C5-A6C3-FF62DDADFA38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F668054-455C-48C5-A6C3-FF62DDADFA38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F668054-455C-48C5-A6C3-FF62DDADFA38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F668054-455C-48C5-A6C3-FF62DDADFA38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76008E61-7BAD-4395-B65F-1A59F0CFBF06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76008E61-7BAD-4395-B65F-1A59F0CFBF06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76008E61-7BAD-4395-B65F-1A59F0CFBF06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76008E61-7BAD-4395-B65F-1A59F0CFBF06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
