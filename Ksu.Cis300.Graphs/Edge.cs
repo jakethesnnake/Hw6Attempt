@@ -17,52 +17,19 @@ namespace Ksu.Cis300.Graphs
     public struct Edge<TNode, TEdgeData>
     {
         /// <summary>
-        /// The source node.
-        /// </summary>
-        private TNode _source;
-
-        /// <summary>
         /// Gets the source node.
         /// </summary>
-        public TNode Source
-        {
-            get
-            {
-                return _source;
-            }
-        }
-
-        /// <summary>
-        /// The destination node.
-        /// </summary>
-        private TNode _destination;
+        public TNode Source { get; }
 
         /// <summary>
         /// Gets the destination node.
         /// </summary>
-        public TNode Destination
-        {
-            get
-            {
-                return _destination;
-            }
-        }
-
-        /// <summary>
-        /// The data associated with the edge.
-        /// </summary>
-        private TEdgeData _data;
+        public TNode Destination { get; }
 
         /// <summary>
         /// Gets the data associated with the edge.
         /// </summary>
-        public TEdgeData Data
-        {
-            get
-            {
-                return _data;
-            }
-        }
+        public TEdgeData Data { get; }
 
         /// <summary>
         /// Constructs an edge from the given source node to the given destination node having
@@ -73,9 +40,9 @@ namespace Ksu.Cis300.Graphs
         /// <param name="data">The data associated with the edge.</param>
         public Edge(TNode source, TNode dest, TEdgeData data)
         {
-            _source = source;
-            _destination = dest;
-            _data = data;
+            Source = source;
+            Destination = dest;
+            Data = data;
         }
     }
 }
