@@ -29,86 +29,91 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserInterface));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.uxSaveButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStrip1.SuspendLayout();
+            this.uxToolStrip = new System.Windows.Forms.ToolStrip();
+            this.uxOpenFile = new System.Windows.Forms.ToolStripButton();
+            this.uxSaveFile = new System.Windows.Forms.ToolStripButton();
+            this.uxTextBox = new System.Windows.Forms.TextBox();
+            this.uxLabel = new System.Windows.Forms.Label();
+            this.uxOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.uxSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.uxToolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // uxToolStrip
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.Location = new System.Drawing.Point(236, 66);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(361, 70);
-            this.textBox1.TabIndex = 0;
+            this.uxToolStrip.AutoSize = false;
+            this.uxToolStrip.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.uxToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.uxOpenFile,
+            this.uxSaveFile});
+            this.uxToolStrip.Location = new System.Drawing.Point(0, 0);
+            this.uxToolStrip.Name = "uxToolStrip";
+            this.uxToolStrip.Size = new System.Drawing.Size(501, 64);
+            this.uxToolStrip.TabIndex = 0;
+            this.uxToolStrip.Text = "toolStrip1";
             // 
-            // label1
+            // uxOpenFile
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.label1.Location = new System.Drawing.Point(75, 88);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Max Flow:";
+            this.uxOpenFile.AutoSize = false;
+            this.uxOpenFile.AutoToolTip = false;
+            this.uxOpenFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.uxOpenFile.Font = new System.Drawing.Font("Segoe UI", 7F);
+            this.uxOpenFile.Image = ((System.Drawing.Image)(resources.GetObject("uxOpenFile.Image")));
+            this.uxOpenFile.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.uxOpenFile.Name = "uxOpenFile";
+            this.uxOpenFile.Size = new System.Drawing.Size(100, 36);
+            this.uxOpenFile.Text = "Open File";
             // 
-            // toolStrip1
+            // uxSaveFile
             // 
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
-            this.uxSaveButton});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(609, 63);
-            this.toolStrip1.TabIndex = 2;
-            this.toolStrip1.Text = "toolStrip1";
+            this.uxSaveFile.AutoSize = false;
+            this.uxSaveFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.uxSaveFile.Enabled = false;
+            this.uxSaveFile.Font = new System.Drawing.Font("Segoe UI", 7F);
+            this.uxSaveFile.Image = ((System.Drawing.Image)(resources.GetObject("uxSaveFile.Image")));
+            this.uxSaveFile.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.uxSaveFile.Name = "uxSaveFile";
+            this.uxSaveFile.Size = new System.Drawing.Size(100, 36);
+            this.uxSaveFile.Text = "Save File";
             // 
-            // toolStripButton1
+            // uxTextBox
             // 
-            this.toolStripButton1.AutoSize = false;
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 7F);
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(110, 60);
-            this.toolStripButton1.Text = "Open File";
-            this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.uxTextBox.BackColor = System.Drawing.SystemColors.Control;
+            this.uxTextBox.ForeColor = System.Drawing.SystemColors.Control;
+            this.uxTextBox.Location = new System.Drawing.Point(128, 82);
+            this.uxTextBox.Multiline = true;
+            this.uxTextBox.Name = "uxTextBox";
+            this.uxTextBox.ReadOnly = true;
+            this.uxTextBox.Size = new System.Drawing.Size(346, 64);
+            this.uxTextBox.TabIndex = 1;
             // 
-            // uxSaveButton
+            // uxLabel
             // 
-            this.uxSaveButton.AutoSize = false;
-            this.uxSaveButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.uxSaveButton.Enabled = false;
-            this.uxSaveButton.Font = new System.Drawing.Font("Segoe UI", 7F);
-            this.uxSaveButton.Image = ((System.Drawing.Image)(resources.GetObject("uxSaveButton.Image")));
-            this.uxSaveButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.uxSaveButton.Margin = new System.Windows.Forms.Padding(10, 1, 0, 2);
-            this.uxSaveButton.Name = "uxSaveButton";
-            this.uxSaveButton.Size = new System.Drawing.Size(110, 60);
-            this.uxSaveButton.Text = "Save File";
+            this.uxLabel.AutoSize = true;
+            this.uxLabel.Location = new System.Drawing.Point(12, 99);
+            this.uxLabel.Name = "uxLabel";
+            this.uxLabel.Size = new System.Drawing.Size(110, 25);
+            this.uxLabel.TabIndex = 2;
+            this.uxLabel.Text = "Max Flow:";
+            // 
+            // uxOpenFileDialog
+            // 
+            this.uxOpenFileDialog.FileName = "openFileDialog1";
             // 
             // UserInterface
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(609, 166);
-            this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(501, 173);
+            this.Controls.Add(this.uxLabel);
+            this.Controls.Add(this.uxTextBox);
+            this.Controls.Add(this.uxToolStrip);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "UserInterface";
             this.Text = "Network Flow";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.uxToolStrip.ResumeLayout(false);
+            this.uxToolStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,11 +121,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton uxSaveButton;
+        private System.Windows.Forms.ToolStrip uxToolStrip;
+        private System.Windows.Forms.ToolStripButton uxOpenFile;
+        private System.Windows.Forms.ToolStripButton uxSaveFile;
+        private System.Windows.Forms.TextBox uxTextBox;
+        private System.Windows.Forms.Label uxLabel;
+        private System.Windows.Forms.OpenFileDialog uxOpenFileDialog;
+        private System.Windows.Forms.SaveFileDialog uxSaveFileDialog;
     }
 }
-
