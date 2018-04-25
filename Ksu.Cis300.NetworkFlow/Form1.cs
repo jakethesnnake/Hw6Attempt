@@ -16,5 +16,14 @@ namespace Ksu.Cis300.NetworkFlow
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void True(object sender, MouseEventArgs e)
+        {
+        }
     }
 }
