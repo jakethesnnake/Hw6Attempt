@@ -50,10 +50,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label1.Location = new System.Drawing.Point(12, 66);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.label1.Location = new System.Drawing.Point(75, 88);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(218, 51);
+            this.label1.Size = new System.Drawing.Size(122, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Max Flow:";
             // 
@@ -73,7 +73,7 @@
             // 
             this.toolStripButton1.AutoSize = false;
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 7F);
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(110, 60);
@@ -85,6 +85,7 @@
             this.uxSaveButton.AutoSize = false;
             this.uxSaveButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.uxSaveButton.Enabled = false;
+            this.uxSaveButton.Font = new System.Drawing.Font("Segoe UI", 7F);
             this.uxSaveButton.Image = ((System.Drawing.Image)(resources.GetObject("uxSaveButton.Image")));
             this.uxSaveButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.uxSaveButton.Margin = new System.Windows.Forms.Padding(10, 1, 0, 2);
