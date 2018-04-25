@@ -8,6 +8,19 @@ namespace Ksu.Cis300.NetworkFlow
 {
     public static class FlowFinder
     {
-        // methods page seven
+        public static FlowNetwork ReadInputFile(string inputFileName)
+        {
+
+        }
+        public static FlowNetwork FindMaxFlow(FlowNetwork network, out int maxFlowValue)
+        {
+
+        }
+        public static void WriteOutputFile(string fileToBeWritten, FlowNetwork flow, int flowValue)
+        {
+
+        }
+        // end of public classes
+        private static Dictionary<> // finish outline
     }
 }

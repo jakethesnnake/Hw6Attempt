@@ -14,7 +14,13 @@ namespace Ksu.Cis300.NetworkFlow
         public string DestNode { get; }
         public DirectedGraph<string, int> Graph { get; }
 
-        // set up a constructor for a STRUCT
+        public FlowNetwork(string source, string dest)
+        {
+            DestNode = dest;
+            SourceNode = source;
+            Graph = new DirectedGraph<string, int>();   // new instance
+            Graph.AddEdge(source, dest, 1);     // should NOT be 1.
+        }
 
     }
 }
