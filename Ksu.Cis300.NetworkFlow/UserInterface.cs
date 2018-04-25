@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ksu.Cis300.NetworkFlow
 {
-    public partial class Form1 : Form
+    public partial class UserInterface : Form
     {
-        public Form1()
+        public UserInterface()
         {
             InitializeComponent();
         }
@@ -20,10 +20,6 @@ namespace Ksu.Cis300.NetworkFlow
         private void Form1_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void True(object sender, MouseEventArgs e)
-        {
         }
     }
 }
