@@ -63,6 +63,7 @@
             this.uxOpenFile.Name = "uxOpenFile";
             this.uxOpenFile.Size = new System.Drawing.Size(100, 36);
             this.uxOpenFile.Text = "Open File";
+            this.uxOpenFile.Click += new System.EventHandler(this.uxOpenFile_Click);
             // 
             // uxSaveFile
             // 
@@ -75,6 +76,7 @@
             this.uxSaveFile.Name = "uxSaveFile";
             this.uxSaveFile.Size = new System.Drawing.Size(100, 36);
             this.uxSaveFile.Text = "Save File";
+            this.uxSaveFile.Click += new System.EventHandler(this.uxSaveFile_Click);
             // 
             // uxTextBox
             // 
@@ -98,7 +100,11 @@
             // 
             // uxOpenFileDialog
             // 
-            this.uxOpenFileDialog.FileName = "openFileDialog1";
+            this.uxOpenFileDialog.Filter = "CSV files (*.csv)|*.csv|All files (*.*)|*.*";
+            // 
+            // uxSaveFileDialog
+            // 
+            this.uxSaveFileDialog.Filter = "CSV files (*.csv)|*.csv|All files (*.*)|*.*";
             // 
             // UserInterface
             // 

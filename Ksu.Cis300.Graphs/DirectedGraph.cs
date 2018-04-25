@@ -94,6 +94,27 @@ namespace Ksu.Cis300.Graphs
         }
 
         /// <summary>
+        /// Instructions --- WORK ON THIS
+        /// </summary>
+        /// <param name="freshNode"></param>
+        public static void NewNode(TNode freshNode)
+        {
+            // add to dictionary
+        }
+
+        /// <summary>
+        /// DATA ASSOCIATED WITH EDGE -- KEEP WORKING
+        /// </summary>
+        /// <param name="sourceNode"></param>
+        /// <param name="destNode"></param>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public static bool TryGetDataItem(TNode sourceNode, TNode destNode, out TEdgeData data)
+        {
+            // similar to TryGetValue
+        }
+
+        /// <summary>
         /// Gets an enumerable collection of the outgoing edges from the given node.
         /// </summary>
         /// <param name="node">The node.</param>
