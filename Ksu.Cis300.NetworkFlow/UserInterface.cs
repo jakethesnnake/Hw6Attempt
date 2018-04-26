@@ -26,6 +26,7 @@ namespace Ksu.Cis300.NetworkFlow
             {
                 try
                 {
+                    throw new Exception("Exception test.");
                     // call methods
                     uxTextBox.Text = "*insert text here*";
                     MessageBox.Show("File read");

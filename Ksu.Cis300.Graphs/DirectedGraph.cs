@@ -88,7 +88,7 @@ namespace Ksu.Cis300.Graphs
             Tuple<TNode, TNode> edge = GetTuple(source, dest);
             if (_edges.ContainsKey(edge))
             {
-                throw new ArgumentException();
+                throw new Exception("An eddge can be included only once.");
             }
             AddNewEdge(edge, value);
         }
