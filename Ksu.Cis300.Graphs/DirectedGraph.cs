@@ -49,7 +49,7 @@ namespace Ksu.Cis300.Graphs
             }
             if (source.Equals(dest))
             {
-                throw new ArgumentException();
+                throw new Exception("The source and sink nodes must be different.");
             }
             return new Tuple<TNode, TNode>(source, dest);
         }

@@ -12,6 +12,9 @@ namespace Ksu.Cis300.NetworkFlow
 {
     public partial class UserInterface : Form
     {
+
+        FlowNetwork _maxFlowNet;
+        int _maxFlowValue;
         public UserInterface()
         {
             InitializeComponent();
@@ -24,6 +27,8 @@ namespace Ksu.Cis300.NetworkFlow
                 try
                 {
                     // call methods
+                    uxTextBox.Text = "*insert text here*";
+                    MessageBox.Show("File read");
                 }
                 catch (Exception ex)
                 {
@@ -39,7 +44,7 @@ namespace Ksu.Cis300.NetworkFlow
                 try
                 {
                     // call all of the code first
-                    uxTextBox.Text = "# NUM #";   
+                    uxTextBox.Text = "# saved #";   
                     MessageBox.Show("File written.");
                 }
                 catch (Exception ex)
